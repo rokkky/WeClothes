@@ -1,0 +1,25 @@
+.about {
+  padding: 50px 0;
+  background-color: #131212;
+  &__title {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+  &__descr {
+    margin-top: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 23px;
+    a {
+      color: $sub;
+      font-size: 23px;
+      text-decoration: none;
+    }
+    :hover {
+      color: #f5ea8b;
+      transition: 0.3s;
+    }
+  }
+}

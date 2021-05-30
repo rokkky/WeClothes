@@ -1,0 +1,38 @@
+.header {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background-color: #131212;
+  border-bottom: 1px solid $sub;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 50px;
+    ul {
+      display: flex;
+      justify-content:space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      min-width: 400px;
+      list-style-type: none;
+      li {
+        text-transform: uppercase;
+        a {
+          color: $sub;
+          text-decoration: none;
+          font-size: 17px;
+        }
+        :hover {
+          color: #ffffff;
+          transition: 0.3s;
+        }
+      }
+    }
+  }
+  &__logo {
+    color: $sub;
+    font-size: 25px;
+  }
+}

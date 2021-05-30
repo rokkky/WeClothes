@@ -1,0 +1,23 @@
+$main: #161616;
+$sub: rgb(252, 187, 8);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import "./icons";
+html {
+  scroll-behavior: smooth;
+}
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  box-sizing: border-box;
+}
+.container {
+  width: 1140px;
+  margin: 0 auto;
+
+}
+@import "./header";
+@import "./welcome";
+@import "./clothes";
+@import "./weather";
+@import "./about";
+@import "./city";

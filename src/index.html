@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap-reboot.min.css">
+  <link rel="stylesheet" href="/dist/main.bundle.css">
+  <title>WeClothes</title>
+</head>
+<body>
+  <header class="header">
+    <div class="container">
+      <div class="header__menu">
+      <div class="header__logo">WeClothes</div>
+        <ul>
+          <li><a href="#">home</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="#weather">city list</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+  <div class="welcome">
+    <div class="container">
+      <div class="welcome__wrapper">
+        <div class="clothes">
+          <div class="clothes__window top">
+            <div class="clothes__inner top">
+              <img src="img/snow1.png" alt="" class="clothes__item top">
+              <img src="img/rain1.png" alt="" class="clothes__item top">
+              <img src="img/cloud1.png" alt="" class="clothes__item top">
+              <img src="img/snow2.png" alt="" class="clothes__item top">
+              <img src="img/sunlight1.png" alt="" class="clothes__item top">
+              <img src="img/rain2.png" alt="" class="clothes__item top">
+              <img src="img/cloud2.png" alt="" class="clothes__item top">
+              <img src="img/sunlight2.png" alt="" class="clothes__item top">
+              <img src="img/snow3.png" alt="" class="clothes__item top">
+              <img src="img/rain3.png" alt="" class="clothes__item top">
+              <img src="img/cloud3.png" alt="" class="clothes__item top">
+              <img src="img/sunlight3.png" alt="" class="clothes__item top">
+            </div>
+          </div>
+          <div class="clothes__window mid">
+            <div class="clothes__inner mid">
+              <img src="img/snowMid1.png" alt="" class="clothes__item mid">
+            </div>
+          </div>
+          <div class="clothes__window bot">
+            <div class="clothes__inner bot">
+              <img src="img/snowBot1.png" alt="" class="clothes__item bot">
+            </div>
+          </div>
+        </div>
+          <div class="welcome__descr">
+            <div class="welcome__title">Dress for the weather!</div>
+            <div class="welcome__subtitle">We will help you decide what to wear, no matter what the weather is.</div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="about" class="about"> 
+    <div class="container">
+      <div class="about__title">About us</div>
+      <div class="about__descr">The site uses the open API <a href="https://openweathermap.org/"> openweathermap.org</a> to get weather data and dynamically display it on the screen, and also shows clothes that are well suited for this weather. Enjoy your use!
+      </div>
+    </div>
+  </div>
+
+
+  <div id='weather' class="weather">
+    <div class="container">
+      <div class="weather__wrapper">
+        <div class="weather__content">
+          <div class="weather__time">12:00</div>
+          <div class="weather__city">Minsk</div>
+          <div class="weather__icon">
+            <div class="cloud"></div>
+            <div class="rain"></div>
+          </div>
+          <div class="weather__temp">+15</div>
+          <div class="weather__status">Jasno</div>
+          <div class="weather__descr">
+            It's raining right now, take your umbrella!
+          </div>
+        </div>
+        
+        <div id="city" class="city">
+          <span>Choose city:</span>
+          <div class="city__choose">
+            <a href="">Minsk</a>
+            <a href="">Gomel`</a>
+            <a href="">Mogilev</a>
+            <a href="">Grodno</a>
+            <a href="">Brest</a>
+            <a href="">Vitebsk</a>
+          </div>
+          <button class="city__button">change</button>
+        </div>
+        <div class="clothes">
+          <div class="clothes__window top">
+            <div class="clothes__inner top">
+              <img src="img/snow1.png" alt="" class="clothes__item top">
+              <img src="img/rain1.png" alt="" class="clothes__item top">
+              <img src="img/cloud1.png" alt="" class="clothes__item top">
+              <img src="img/snow2.png" alt="" class="clothes__item top">
+              <img src="img/sunlight1.png" alt="" class="clothes__item top">
+              <img src="img/rain2.png" alt="" class="clothes__item top">
+              <img src="img/cloud2.png" alt="" class="clothes__item top">
+              <img src="img/sunlight2.png" alt="" class="clothes__item top">
+              <img src="img/snow3.png" alt="" class="clothes__item top">
+              <img src="img/rain3.png" alt="" class="clothes__item top">
+              <img src="img/cloud3.png" alt="" class="clothes__item top">
+              <img src="img/sunlight3.png" alt="" class="clothes__item top">
+            </div>
+          </div>
+          <div class="clothes__window mid">
+            <div class="clothes__inner mid">
+              <img src="img/snowMid1.png" alt="" class="clothes__item mid">
+            </div>
+          </div>
+          <div class="clothes__window bot">
+            <div class="clothes__inner bot">
+              <img src="img/snowBot1.png" alt="" class="clothes__item bot">
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- <div class="icon sun-shower">
+    <div class="cloud"></div>
+    <div class="sun">
+      <div class="rays"></div>
+    </div>
+    <div class="rain"></div>
+  </div>
+  
+  <div class="icon thunder-storm">
+    <div class="cloud"></div>
+    <div class="lightning">
+      <div class="bolt"></div>
+      <div class="bolt"></div>
+    </div>
+  </div>
+  
+  <div class="icon cloudy">
+    <div class="cloud"></div>
+    <div class="cloud"></div> 
+  </div>
+  
+  <div class="icon flurries">
+    <div class="cloud"></div>
+    <div class="snow">
+      <div class="flake"></div>
+      <div class="flake"></div>
+    </div>
+  </div>
+  
+  <div class="icon sunny">
+    <div class="sun">
+      <div class="rays"></div>
+    </div>
+  </div>
+  
+  <div class="icon rainy">
+    <div class="cloud"></div>
+    <div class="rain"></div>
+  </div> -->
+
+
+  
+  <script src="img//src/jimg/s/animation.js"></script>
+</body>
+</html>

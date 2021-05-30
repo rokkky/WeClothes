@@ -1,0 +1,19 @@
+.clothes {
+  &__window {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 10px;
+    height: 170px;
+    width: 262px;
+  }
+  &__inner {
+    transition: all 1s;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  &__item {
+    height: 170px;
+    width: 262px;
+  }
+}

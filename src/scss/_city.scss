@@ -1,0 +1,38 @@
+.city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  span {
+    color: #fff;
+    text-align: center;
+    font-size: 20px;
+    text-decoration: underline;
+  }
+  &__choose {
+    display: flex;
+    flex-direction: column;
+    a {
+      margin-top: 7px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 25px;
+    }
+    :hover {
+      color: $sub;
+      transition: 0.3s;
+    }
+  }
+  &__button {
+    margin-top: 20px;
+    background-color: #212529;
+    cursor: pointer;
+    width: 130px;
+    height: 40px;
+    border-radius: 10px;
+    border: 3px solid $sub;
+    font-size: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    }
+}
