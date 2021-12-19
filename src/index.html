@@ -5,7 +5,6 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.1/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="/dist/main.bundle.css">
   <title>WeClothes</title>
 </head>
 <body>
@@ -44,11 +43,33 @@
           <div class="clothes__window mid">
             <div class="clothes__inner mid">
               <img src="img/snowMid1.png" alt="" class="clothes__item mid">
+              <img src="img/rainMid1.png" alt="" class="clothes__item mid">
+              <img src="img/cloudMid1.png" alt="" class="clothes__item mid">
+              <img src="img/snowMid2.png" alt="" class="clothes__item mid">
+              <img src="img/sunlightMid1.png" alt="" class="clothes__item mid">
+              <img src="img/rainMid2.png" alt="" class="clothes__item mid">
+              <img src="img/cloudMid2.png" alt="" class="clothes__item mid">
+              <img src="img/sunlightMid2.png" alt="" class="clothes__item mid">
+              <img src="img/snowMid3.png" alt="" class="clothes__item mid">
+              <img src="img/rainMid3.png" alt="" class="clothes__item mid">
+              <img src="img/cloudMid3.png" alt="" class="clothes__item mid">
+              <img src="img/sunlightMid3.png" alt="" class="clothes__item mid">
             </div>
           </div>
           <div class="clothes__window bot">
             <div class="clothes__inner bot">
               <img src="img/snowBot1.png" alt="" class="clothes__item bot">
+              <img src="img/rainBot1.png" alt="" class="clothes__item bot">
+              <img src="img/cloudBot1.png" alt="" class="clothes__item bot">
+              <img src="img/snowBot2.png" alt="" class="clothes__item bot">
+              <img src="img/sunlightBot1.png" alt="" class="clothes__item bot">
+              <img src="img/rainBot2.png" alt="" class="clothes__item bot">
+              <img src="img/cloudBot2.png" alt="" class="clothes__item bot">
+              <img src="img/sunlightBot2.png" alt="" class="clothes__item bot">
+              <img src="img/snowBot3.png" alt="" class="clothes__item bot">
+              <img src="img/rainBot3.png" alt="" class="clothes__item bot">
+              <img src="img/cloudBot3.png" alt="" class="clothes__item bot">
+              <img src="img/sunlightBot3.png" alt="" class="clothes__item bot">
             </div>
           </div>
         </div>
@@ -70,7 +91,7 @@
   </div>
 
 
-  <div id='weather' class="weather">
+  <div class="weather">
     <div class="container">
       <div class="weather__wrapper">
         <div class="weather__content">
@@ -87,17 +108,13 @@
           </div>
         </div>
         
-        <div id="city" class="city">
-          <span>Choose city:</span>
-          <div class="city__choose">
-            <a href="">Minsk</a>
-            <a href="">Gomel`</a>
-            <a href="">Mogilev</a>
-            <a href="">Grodno</a>
-            <a href="">Brest</a>
-            <a href="">Vitebsk</a>
-          </div>
+        <div class="city">
+          <span>Choose city</span>
+          <div class="city__active">Minsk</div>
+          <div class="city__menu"></div>
           <button class="city__button">change</button>
+
+          
         </div>
         <div class="clothes">
           <div class="clothes__window top">
@@ -127,13 +144,11 @@
             </div>
           </div>
       </div>
-    </div>
+    </div> 
   </div>
 
 
-
-
-  <!-- <div class="icon sun-shower">
+  <div class="icon sun-shower">
     <div class="cloud"></div>
     <div class="sun">
       <div class="rays"></div>
@@ -171,10 +186,9 @@
   <div class="icon rainy">
     <div class="cloud"></div>
     <div class="rain"></div>
-  </div> -->
+  </div>
 
 
   
-  <script src="img//src/jimg/s/animation.js"></script>
 </body>
 </html>

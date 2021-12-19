@@ -5,42 +5,22 @@ const topInner = document.querySelector('.welcome .clothes__inner.top'),
       botInner = document.querySelector('.welcome .clothes__inner.bot'),
       botItems = document.querySelectorAll('.welcome .clothes__item.bot');
 let itemWidth = 261.99,
-    offset,
-    width;
+    topOffset = [0],
+    midOffset = [0],
+    botOffset = [0];
 
 
-  function scroll (items) {
-    width = (items.length - 1) * parseInt(window.getComputedStyle(items[0]).width),
-    offset = 0;
-    /* setInterval(() => {
-      if (offset >= (width - itemWidth)) {
-        offset = 0;
-        inner.style.transform = `translateX(${-offset}px)`;
-      }
-      else {
-        offset += itemWidth;
-        inner.style.transform = `translateX(${-offset}px)`;
-      }
-    }, 2000);  */
-    intervalScroll(topInner);
+function scroll (items, inner, offset) {
+  let width = (items.length - 1) * parseInt(window.getComputedStyle(items[0]).width);
+  if (offset[0] >= (width - itemWidth)) {
+    offset[0] = 0;
+    inner.style.transform = `translateX(${-offset[0]}px)`;
+  } else {
+    offset[0] += itemWidth;
+    inner.style.transform = `translateX(${-(offset[0])}px)`;
   }
+}
 
-  scroll(topItems);
-
-/*   setTimeout(() => {
-    
-  }, timeout); */
-
-  function intervalScroll(inner) {
-    if (offset >= (width - itemWidth)) {
-      offset = 0;
-      inner.style.transform = `translateX(${-offset}px)`;
-    }
-    else {
-      offset += itemWidth;
-      inner.style.transform = `translateX(${-offset}px)`;
-    }
-    setTimeout(() => {
-      intervalScroll(inner)
-    }, 2000);
-  }
+setInterval(scroll, 1800, topItems, topInner, topOffset);
+setInterval(scroll, 2800, botItems, botInner, botOffset);
+setInterval(scroll, 3700, midItems, midInner, midOffset);
